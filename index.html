@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>color-picker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+   #header{
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+      height: 100px;
+      width: 100%;
+      color: white;
+      background-color: rgba(240, 250, 235,1);
+      position: fixed;
+      z-index: 999999;  
+      margin-right: 50px;
+      border-radius: 0px  0px 20px 20px; 
+      }
+   #float{
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.3 );
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 25px;  
+   }
+   #bits{
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6 );
+    transition-duration: 0.4s;
+    padding-bottom:100px;
+   }
+   #bits:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7 );
+    transition-duration: 0.4s;
+   }
+   #footer{
+    height: auto;  
+    width: 100%;
+    box-shadow: 0px -10px 25px rgba(0,0,0,0.5);
+    background-color: rgba(9, 40, 56,0.98);
+    border-radius: 25px 25px 0px 0px;
+    color: rgba(255,255,255,0.8);
+    font-size: 25px;
+   }
+  </style>
+</head> 
+<body style="height: auto;background-color: white ;">
+<!--================================================ herader ===================================================-->
+<div class="container-fluid" id="header">
+  <br>
+  <center><h1 style="font-size: 45px;color: rgba(9, 40, 56,0.9)">color-picker</h1></center>
+</div><br><br><br><br><br>
+
+<!--================================================ red color ===================================================-->
+<div id="title"> 
+  <hr style="width:100%;border-top: 1px solid rgba(255, 0, 0,0.2);"> 
+  <center><span style="font-size: 35px;">Shades & Tints of</span><span style="font-size:35px;color:rgba(255, 0, 0,1)"> RED</span></center>
+  <hr style="width:75%;border-top: 3px solid rgba(255, 0, 0,0.2);">
+</div>  
+
+<div id="float" class="container-fluid" >
+<div class="row">
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(217, 28, 63,1)">
+    <center><span style="color:white;font-size:30px;">#d91c3f</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(255, 0, 0,1)">
+    <center><span style="color:white;font-size:30px;">#ff0000</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(209, 6, 71,1)">
+    <center><span style="color:white;font-size:30px;">#d10647</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(140, 3, 47,1)">
+    <center><span style="color:white;font-size:30px;">#8c032f</span></center>
+  </blockquote>  
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(255, 79, 79,1)">
+    <center><span style="color:white;font-size:30px;">#ff4f4f</span></center>
+  </blockquote> 
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(214, 0, 0,1)">
+    <center><span style="color:white;font-size:30px;">#d60000</span></center>
+  </blockquote> 
+</div>
+</div>
+</div>
+<br>
+<!--================================================ green color ===================================================-->
+<div id="title">  
+  <hr style="width:100%;border-top: 1px solid rgba(0, 255, 0,0.2);">
+  <center><span style="font-size: 35px;">Shades & Tints of</span><span style="font-size:35px;color:rgba(0, 255,0,1)"> GREEN</span></center>
+  <hr style="width:75%;border-top: 3px solid rgba(0, 255, 0,0.2);">
+</div>  
+
+<div id="float" class="container-fluid" >
+<div class="row">
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(40, 82, 4,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(220, 242, 201,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(101, 186, 28,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(118, 255, 0,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote>  
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(40, 82, 4,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote> 
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(220, 242, 201,1)">
+    <center><span style="color:white;font-size:30px;">#000000</span></center>
+  </blockquote> 
+</div>
+</div>
+</div>  
+<br>
+<!--================================================ blue color ========================================-->
+<div id="title"> 
+  <hr style="width:100%;border-top: 1px solid rgba(0, 0, 255,0.2);"> 
+  <center><span style="font-size: 35px;">Shades & Tints of</span><span style="font-size:35px;color:rgba(0, 0, 255,1)"> BLUE</span></center>
+  <hr style="width:75%;border-top: 3px solid rgba(0, 0, 255,0.2);">
+</div>  
+
+<div id="float" class="container-fluid" >
+<div class="row">
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(12, 25, 71,1)">
+    <center><span style="color:white;font-size:30px;">#0c1947</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(112, 137, 224,1)">
+    <center><span style="color:white;font-size:30px;">#7089e0</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(0, 176, 230,1)">
+    <center><span style="color:white;font-size:30px;">#00b0e6</span></center>
+  </blockquote>
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(15, 19, 217,1)">
+    <center><span style="color:white;font-size:30px;">#0f13d9</span></center>
+  </blockquote>  
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(38, 110, 133,1)">
+    <center><span style="color:white;font-size:30px;">#266e85</span></center>
+  </blockquote> 
+</div>
+<div class="col-sm-2">
+  <br>
+  <blockquote id="bits" style="height: 150px;width: 100%;border-radius: 10px;background-color:rgba(131, 133, 230,1)">
+    <center><span style="color:white;font-size:30px;">#8385e6</span></center>
+  </blockquote> 
+</div>
+</div>
+</div> 
+<br><br>
+<!--================================================footer=========== ========================================-->
+<!--- dev contributions -->
+<div class="container-fluid" id="footer">
+  <div class="row">
+    <div class="col-sm-6" ><br>      
+  <center><blockquote style="height: auto;width: 100%;border-radius: 10px;background-color:rgba(9, 40, 56,1);box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6 );border: 1px solid rgba(255,255,255,0.15);">
+    <span style="color:  rgba(240, 250, 235,1);font-size:35px;">dev-contribution</span>
+    <hr style="height: 0px; width: 75%;border: 2px solid rgba(255,255,255,0.3);">
+    <br>
+    <p>feel free to contribute the best colors..!</p>
+    <a target="$self" href="dev_page.html"><button style="width:45%;font-size:30px;border: 1px solid rgba(255,255,255,0.15);background-color: rgba(240, 250, 235,1);height: 50px;color:rgba(9, 40, 56,1);border-radius: 15px;">click</button></a>
+    <br><br>
+  </blockquote></center>
+  <br>
+    </div>
+
+
+<!----------- contact ------------->
+  <div class="col-sm-6">
+  <br>      
+  <blockquote style="height: auto;width: 100%;border-radius: 10px;background-color: rgba(9, 40, 56,1);box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6 );border: 1px solid rgba(255,255,255,0.15);">
+    <center><span style="color: rgba(240, 250, 235,1);font-size:35px;">contact</span></center>
+    <hr style="height: 0px; width: 75%;border: 2px solid rgba(255,255,255,0.3);">
+    <center><form>
+      <input type="text" name="name" required=" " placeholder="&nbsp;&nbsp;your_name" style="width:85%;font-size:20px;border: 1px solid rgba(255,255,255,0.15);background-color: rgba(255,255,255,0.1);height: 45px;color: white;border-radius: 5px;"><br><br>
+      <input type="email" name="email" required=" " placeholder="&nbsp;&nbsp;example@gmail.com" style="width:85%;font-size:20px;border: 1px solid rgba(255,255,255,0.15);background-color: rgba(255,255,255,0.1);height: 45px;color: white;border-radius: 5px;"><br><br>
+      <input type="submit" name="submit" style="width:45%;font-size:30px;border: 1px solid rgba(255,255,255,0.15);background-color: rgba(240, 250, 235,1);height: 50px;color:rgba(9, 40, 56,1);border-radius: 15px;">
+    </form></center>
+    <br>
+  </blockquote>
+  <br>
+    </div>
+  </div>
+<!--- copyright -->
+<div class="container-fluid" >
+
+</div>
+</div>
+</body>
+</html>
